@@ -49,7 +49,7 @@ const DevfinderContextProvider = ({ children }) => {
 
     try {
       const response = await fetch(
-        "http://localhost:3001/gituser?user=" + username
+        "https://devfinder-backend-vmqb.onrender.com/gituser?user=" + username
       );
       const data = await response.json();
 
