@@ -25,7 +25,7 @@ function handleData(state, action) {
 const DevfinderContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [data, dataDispatch] = useReducer(handleData, {
-    darkMode: false,
+    darkMode: true,
     userData: {},
   });
 
